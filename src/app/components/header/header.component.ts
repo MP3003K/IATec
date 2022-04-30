@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  selector: boolean = false;
+  selectorDropdown() {
+    this.selector = !this.selector;
+  }
+  selected: string = "Collections";
+  isToggle: number = 1;
+  constructor() {}
 
   ngOnInit(): void {
   }
