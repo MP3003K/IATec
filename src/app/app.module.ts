@@ -1,17 +1,22 @@
+import { LoginComponent } from './Estructura/login/login.component';
+import { Herramienta2Component } from './components/Herramientas/herramienta2/herramienta2.component';
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule, ChildrenOutletContexts } from '@angular/router';
-import { LayoutComponent } from './components/layout/layout.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
+
 import { Herramienta1Component } from './components/Herramientas/herramienta1/herramienta1.component';
-import { LoginComponent } from './components/login/login.component';
-import { BodyComponent } from './components/body/body.component';
+import { BodyComponent } from './Estructura/body/body.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Herramienta3Component } from './components/Herramientas/herramienta3/herramienta3.component';
+import { MatTableModule } from '@angular/material/table';
+import { LayoutComponent } from './Estructura/layout/layout.component';
+import { HeaderComponent } from './Estructura/header/header.component';
+import { SidebarComponent } from './Estructura/sidebar/sidebar.component';
+import { HomeComponent } from './Estructura/home/home.component';
+import { FooterComponent } from './Estructura/footer/footer.component';
 
 
 
@@ -19,18 +24,25 @@ import { BodyComponent } from './components/body/body.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    HeaderComponent,
-    SidebarComponent,
     HomeComponent,
     FooterComponent,
     Herramienta1Component,
     LoginComponent,
     BodyComponent,
+    Herramienta3Component,
+    Herramienta2Component,
+    LayoutComponent,
+    HeaderComponent,
+    SidebarComponent,
+    HomeComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NoopAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
