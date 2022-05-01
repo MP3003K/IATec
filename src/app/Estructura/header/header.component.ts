@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  selector: boolean = false;
-  selectorDropdown() {
-    this.selector = !this.selector;
+  //? Valoriables
+
+  mensajeria=false;
+
+  //  Funciones
+
+  toggleMensajeria(){
+    if (this.mensajeria) {
+      this.mensajeria= false;
+    } else {
+      this.mensajeria=true;
+    }
   }
-  selected: string = "Collections";
-  isToggle: number = 1;
+
   constructor() {}
 
   ngOnInit(): void {

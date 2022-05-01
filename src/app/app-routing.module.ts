@@ -10,6 +10,8 @@ import { Herramienta3Component } from './components/Herramientas/herramienta3/he
 const routes: Routes = [
 {path:'', component:LayoutComponent,
 children:[
+
+  {path:'',component:Herramienta1Component},
   {path:'herramienta1',component:Herramienta1Component},
   {path:'herramienta2',component:Herramienta2Component},
   {path:'herramienta3',component:Herramienta3Component}

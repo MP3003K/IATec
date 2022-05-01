@@ -17,6 +17,7 @@ import { HeaderComponent } from './Estructura/header/header.component';
 import { SidebarComponent } from './Estructura/sidebar/sidebar.component';
 import { HomeComponent } from './Estructura/home/home.component';
 import { FooterComponent } from './Estructura/footer/footer.component';
+import { HighlightDirective } from './components/Herramientas/highlight.directive';
 
 
 
@@ -36,7 +37,8 @@ import { FooterComponent } from './Estructura/footer/footer.component';
     SidebarComponent,
     HomeComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
